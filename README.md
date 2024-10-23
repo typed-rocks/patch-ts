@@ -1,7 +1,8 @@
 # Patch any TypeScript Compiler to add support of custom intrinsic types
 
-<div style="font-size: 20px; display: grid; grid-auto-flow: column; align-items: center; column-gap: 10px">
-<div>
+`patch-ts` is a command-line interface (CLI) designed to enhance the TypeScript compiler by patching its the `checker.ts` file which creates the types. All changes can be found in the `templates.ts` file.
+
+Input:
 
 ```javascript
 module.exports = {
@@ -11,12 +12,7 @@ module.exports = {
   },
 };
 ```
-
-</div>
-<div style="text-align: center; font-size:50px">
-<span>➡️</span>
-</div>
-<div>
+Output:
 
 ```typescript
 
@@ -29,7 +25,6 @@ type IsEmail = Email<'Hi'>;
 </div>
 </div>
 
-`patch-ts` is a command-line interface (CLI) designed to enhance the TypeScript compiler by patching its the `checker.ts` file which creates the types. All changes can be found in the `templates.ts` file.
 
 ## Features
 
