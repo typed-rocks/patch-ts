@@ -1,0 +1,28 @@
+{
+  "name": "patch-ts",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "scripts": {
+    "build": "tsup"
+  },
+  "bin": {
+    "patch-ts": "./dist/cli.js"
+  },
+    "keywords": [],
+  "author": "Christian Woerz",
+  "license": "MIT",
+  "description": "Patch TypeScript to allow to define your own intrinsic types",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ts-morph": "^24.0.0",
+    "which": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/which": "^3.0.4",
+    "esbuild": "^0.24.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  },
+  "files": ["dist"]
+}

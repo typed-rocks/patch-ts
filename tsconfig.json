@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "Node",
+    "plugins": [
+      {
+        "name": "patch-ts",
+        "test": "asdf"
+      }
+    ],
+  }
+}
