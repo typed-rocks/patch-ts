@@ -7,7 +7,7 @@ Input:
 ```javascript
 module.exports = {
   Email: {
-    fn: (str) => EMAILREGEX.test(str),
+    fn: (str) => str.includes("@") ? str : "NEVER",
     type: "boolean",
   },
 };
